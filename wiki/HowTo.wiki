@@ -1,5 +1,5 @@
 #summary How to install and configure OraAlertCheck
-#labels Phase-Deploy
+#labels Phase-Deploy,Featured
 
 = How To install and configure OraAlertCheck =
 

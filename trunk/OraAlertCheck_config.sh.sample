@@ -1,0 +1,33 @@
+
+# Directory where temp and working files
+# will be placed (/home/oracle/OraAlertCheck for example)
+export WORKDIR=/path/to/a/working/dir
+
+# all errors will go to this file
+export MAIL1="<dba@somedomain.com>"
+
+# big problems will use this emails
+export MAIL2="<dba@somedomain.com>,<pager@somedomain.com>"
+
+# FROM address for the emails to be send
+export MAILFROM=oracle@yourserver.yourdomain.com
+
+# replace this with your sendmail program. 
+# If you don't have sendmail working, maybe you can use remote shell and send from other box that can:
+# SENDMAIL_COMMAND="remsh mailserver_hostname /usr/sbin/sendmail -t -oi"
+export SENDMAIL_COMMAND="/usr/sbin/sendmail -t -oi"
+
+# Automatic alert log truncation in bytes,
+# 0 to disable alert log auto truncation
+export TRUNCATE_BYTES=0
+
+# oratab file location
+export ORATAB_LOC=/etc/oratab
+
+# tail command. It should support -n option
+# or you will receive errors when running
+# for Solaris usually is..
+export TAIL=/usr/xpg4/bin/tail
+# for AIX 5.3 and others 
+# export TAIL=/usr/bin/tail
+

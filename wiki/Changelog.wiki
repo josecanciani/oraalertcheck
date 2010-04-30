@@ -3,6 +3,10 @@
 
 = Changelog =
 
+0.1.6
+    * Updated license to GPL v3
+    * Moved to Google Code for sharing source code with SVN and having a good Issue Tracker.
+
 0.1.5
 
     * OraAlertCheck is fully functional in AIX (thanks Fayyaz, tested on 5.3).

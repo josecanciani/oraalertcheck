@@ -14,7 +14,8 @@ Rename OraAlertCheck_config.sh.sample to OraAlertCheck_config.sh. Edit the file 
 OraAlertCheck look for your instances on /etc/oratab by default, so if this does not exists you should create it or link it to the real path.
 
 Check to see if the script can find your alert.log files running:
-$ ./OraAlertCheck.sh test
+
+{{{$ ./OraAlertCheck.sh test}}}
 
 You should see the ORACLE_SID followed by the alert.log path. If you can't and you discover a bug in the program, let me know, if it does then skip to the next paragraph. The script connects to the database "/ as sysdba" to get the value of the background_dump_dest parameter (where alert_SID.log file should be). Sometimes this parameter has characters like "?" to indicate the ORACLE_HOME. Be sure to have the full path there.
 
